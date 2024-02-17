@@ -14,9 +14,14 @@ function App() {
   };
 
   const toggleTask = index => {
-    const newTasks = [...tasks];
+    let newTasks = [...filteredTasks];
     newTasks[index].completed = !newTasks[index].completed;
-    setTasks(newTasks);
+    setTasks(prev => {
+      const newTasks = [...prev];
+      newTasks[index].completed = !newTasks[index].completed;
+      return newTasks;
+    });
+
   };
 
   const deleteTask = index => {
