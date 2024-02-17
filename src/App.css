@@ -1,0 +1,86 @@
+/* Gradient Background */
+body {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b, #ffeca9);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  color: #5f1b00;
+}
+
+/* Form Inputs */
+.form-input {
+  padding: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #371000;
+  border-radius: 5px;
+}
+
+/* Task List Container */
+.task-list-container {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+/* Task Item */
+.task-item {
+  background-color: rgba(255, 222, 204, 0.9);
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CSS */
+.addNewButton{
+  background: #861f00;
+  border-radius: 6px;
+  box-shadow: #3b0d00 0 10px 21px -13px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 6px 18px;
+  border: 0;
+  margin: 10px 0 0 10px;
+}
+
+.button {
+  background: #ff5e2d;
+  border-radius: 50px;
+  box-shadow: #d32e00 0 10px 21px -13px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 4px 18px;
+  border: 0;
+  margin: 10px 10px 0 0;
+}
+
+.deleteButton {
+  color: #c72800;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 1;
+  background-color: transparent;
+  border: 0;
+}
+
+.material-icons{
+  font-size: 20px;
+}
