@@ -13,16 +13,16 @@ function App() {
     setNewTask('');
   };
 
-  const toggleTask = index => {
-    let newTasks = [...filteredTasks];
-    newTasks[index].completed = !newTasks[index].completed;
-    setTasks(prev => {
-      const newTasks = [...prev];
-      newTasks[index].completed = !newTasks[index].completed;
-      return newTasks;
-    });
-
+  const toggleTask = (taskParam) => {
+    const index = tasks.findIndex(task => task === taskParam);
+    if (index === -1) {
+      return;
+    }
+    const newTasks = [...tasks];
+    newTasks[index] = { ...newTasks[index], completed: !newTasks[index].completed };
+    setTasks(newTasks);
   };
+
 
   const deleteTask = index => {
     const newTasks = [...tasks];
@@ -59,7 +59,7 @@ function App() {
             <input
               type="checkbox"
               checked={task.completed}
-              onChange={() => toggleTask(index)}
+              onChange={() => toggleTask(task)}
             />
             <span className="taskList"
               style={{ textDecoration: task.completed ? 'line-through' : 'none' }}
