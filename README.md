@@ -4,13 +4,13 @@ Live demo link : https://ibrahim-nagnur.github.io/react-todo-app/
 
 ## Features
 
--Implemented a form to add new tasks to the list.
--Each task has a title and a flag indicating whether it's completed.
--New tasks are added to the top of the list.
--Displays all tasks in a list format.
--Implemented a button or checkbox to toggle the completed status of each task.
--Includes an option to delete tasks from the list.
--Implemented filtering options that allow users to view all tasks, only the completed tasks, or only the incomplete tasks.
+- Implemented a form to add new tasks to the list.
+- Each task has a title and a flag indicating whether it's completed.
+- New tasks are added to the top of the list.
+- Displays all tasks in a list format.
+- Implemented a button or checkbox to toggle the completed status of each task.
+- Includes an option to delete tasks from the list.
+- Implemented filtering options that allow users to view all tasks, only the completed tasks, or only the incomplete tasks.
 
 
 In the project directory, you can run:
